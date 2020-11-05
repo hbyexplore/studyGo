@@ -7,8 +7,8 @@ import (
 
 //字段名必须大写  因为是通过反射赋值
 type student struct {
-	Name string `json:"name" form:"name"` //binding:"required" 表示该字段请求中必须传 不传报错
-	Age  int    `json:"age" form:"age"`
+	Name string `json:"name" form:"name" db:"name"` //binding:"required" 表示该字段请求中必须传 不传报错
+	Age  int    `json:"age" form:"age" db:"age"`
 }
 
 var students student
