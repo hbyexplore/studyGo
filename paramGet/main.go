@@ -23,7 +23,7 @@ func main() {
 	})
 
 	/*
-		获取 post请求 form 表单的值
+		获取 post请求的值
 	*/
 	router.POST("/form", func(context *gin.Context) {
 		nameVal := context.PostForm("name")

@@ -5,11 +5,9 @@ import (
 	"net/http"
 )
 
-type aa struct {
-	name string
-	age  int
-}
-
+/*
+GIN 路由 用的是 httpRouter 组件  路由速度很快 因为 组件内用的是  url前缀数进行搜索
+*/
 func main() {
 	//启动一个默认的路由
 	router := gin.Default()
